@@ -1,7 +1,11 @@
 const express = require('express'); 
-const colours = require('colors');
+const colors = require('colors');
+const connectDB = require('./config/db');
 
 const app = express();
+
+// connect DB 
+connectDB();
 
 app.get('/', (req, res) => res.send('API is running'));
 
