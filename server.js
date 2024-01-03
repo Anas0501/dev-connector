@@ -3,9 +3,9 @@ const colors = require('colors');
 const connectDB = require('./config/db');
 
 const app = express();
-
 // connect DB 
 connectDB();
+
 
 // init middleware
 app.use(express.json({ extended: false }));
